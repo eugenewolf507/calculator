@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator-grid">
+      <div class="output">
+        <div data-previous-operand class="previous-operand"></div>
+        <div data-current-operand class="current-operand"></div>
+      </div>
+      <button data-all-clear class="span-three">AC</button>
+      <button data-delete>DEL</button>
+      <button data-plus-minus>&#177;</button>
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>+</button>
+      <button data-operation>-</button>
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>÷</button>
+      <button data-operation>*</button>
+      <button data-number>7</button>
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>pow</button>
+      <button data-sqrt>sqrt‎</button>
+      <!-- data-one-operation - it is buttons 
+        for operation with one number, 
+        such operation sqrt -->
+      <button data-number>.</button>
+      <button data-number>0</button>
+      <button data-equals class="span-three">=</button>
+
+      <div class="info">
+        <p>Выполнено:</p>
+        <ul>
+          <li>базовая функциональнось</li>
+          <li>возведение в степень (pow) <br />10.1 pow 3 => 1030.301</li>
+          <li>
+            вычисление корня квадратного (sqrt) <br />
+            25 sqrt
+          </li>
+          <li>действия с отрицательными числами с помощью кнопки &#177;</li>
+          <li>действия с дробями <br />-0.15 + -0.15 => -0.3</li>
+        </ul>
+        <p>
+          В случае неработоспособности чего-либо прошу связаться со мной в
+          Discord по нику @Eugene Volkov (@eugenewolf507). Заранее спасибо.
+        </p>
+      </div>
+      <div class="error" data-error>
+        <p>The square root cannot be calculated from a negative number.</p>
+        <p>Please, input new number and choose operation.</p>
+      </div>
+    </div>
+  </body>
+</html>
